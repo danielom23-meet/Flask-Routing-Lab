@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        a { color: white; background-color: red; text-decoration: none }
+        td { border : 1; border-color: black}
+    </style>
     <meta charset="UTF-8">
     <title>Product</title>
 </head>
 <body>
+    <table>
+        <tr>
+            <td>
+                <a href = "{{ url_for('home') }}" style = "font-size: 30px">Home </a>
+                </td>
+                <td>
+                <a href = "{{ url_for('cart') }}" style = "font-size: 30px">Cart </a>
+                </td>
+        </tr>
+    </table>
     <h1 align = "center" style = "text-decoration: underline"> product page </h1>
     <h1>watermelon: </h1>
     <img src = "static/watermelon.jpg" style = "height:  400px">
     <h2>you can search here for products you want</h2>
     <h1> The price is: 10$ </h1>
-    <button> add to cart </button>
-    <div>
-        <a href = "{{ url_for('home') }}" style = "font-size: 30px">Home </a>
-        <a href = "{{ url_for('cart') }}" style = "font-size: 30px">Cart </a>
-    </div>
+    <button id = "computer"> add to cart </button>
+    
+    <script>
+        /*var computer = document.getElementById("computer");
+        if(computer != null)
+        {
+
+        }*/
+    </script>
 </body>
 </html>
