@@ -7,8 +7,14 @@
 <body>
     <h1 align = "center" style = "text-decoration: underline"> Ebay </h1>
     <h2> Welcome to ebay shop, you can buy anything you want </h2>
+    <button> add to cart </button>
     <img src= "static/computer.jpg" style = "height: 400px">
     <h1> earphones: </h1>
+    <button> add to cart </button>
     <img src = "static/earphones.jpg" style = "height: 400px">
+    <div>
+        <a href = "{{ url_for('product') }}" style = "font-size:30px">Products </a>
+        <a href = "{{ url_for('cart') }}" style = "font-size: 30px">Cart </a>
+    </div>
 </body>
 </html>

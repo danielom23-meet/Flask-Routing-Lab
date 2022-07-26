@@ -5,6 +5,15 @@
     <title>Product</title>
 </head>
 <body>
-
+    <h1 align = "center" style = "text-decoration: underline"> product page </h1>
+    <h1>watermelon: </h1>
+    <img src = "static/watermelon.jpg" style = "height:  400px">
+    <h2>you can search here for products you want</h2>
+    <h1> The price is: 10$ </h1>
+    <button> add to cart </button>
+    <div>
+        <a href = "{{ url_for('home') }}" style = "font-size: 30px">Home </a>
+        <a href = "{{ url_for('cart') }}" style = "font-size: 30px">Cart </a>
+    </div>
 </body>
 </html>
